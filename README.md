@@ -1,45 +1,25 @@
-# Konan Dashboard
+# Dashboard Vercel
 
-Dashboard web pour visualiser l'état de Konan en temps réel.
+## Description
 
-## Déploiement sur Vercel
+Dashboard CRM deploye sur Vercel.
 
-1. Push ce dossier sur GitHub
-2. Connecter le repo à Vercel
-3. Vercel déploie automatiquement à chaque push
+## Fonctionnement
 
-## Mise à jour des données
+1. Lit les donnees CRM locales
 
-Konan exécute ce script pour mettre à jour le dashboard:
+2. Affiche les statistiques
 
-```powershell
-python C:\Users\solan\clawd\dashboard-vercel\sync_dashboard.py --push
+3. Synchronise avec le cloud
+
+## Installation
+
+```bash
+npm install
+npm run dev
 ```
 
-Cela:
-1. Lit les données CRM locales
-2. Met à jour `public/data.json`
-3. Push vers GitHub
-4. Vercel redéploie automatiquement
+## Configuration
 
-## Structure
+Voir le fichier .env.example
 
-```
-dashboard-vercel/
-├── pages/
-│   ├── index.tsx      # Page principale
-│   └── _document.tsx  # Config HTML
-├── public/
-│   └── data.json      # Données (mis à jour par Konan)
-├── sync_dashboard.py  # Script de sync
-├── package.json
-└── next.config.js
-```
-
-## Fonctionnalités
-
-- 📊 Stats skills (57)
-- 👥 Clients CRM
-- 💼 Pipeline deals
-- 📈 Prix crypto live
-- 🔄 Auto-refresh 5 min
