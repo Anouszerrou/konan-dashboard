@@ -31,19 +31,19 @@
   "pipeline": {
     "deal_001": {
       "titre": "Credit Equipement Camion",
-      "client": "ARMK TRANS",
+      "client": "cli_001",
       "montant": 500000,
       "stage": "proposition"
     },
     "deal_002": {
-      "titre": "Financement Mining",
-      "client": "GreenHash Maroc",
+      "titre": "Financement Materiel Mining",
+      "client": "cli_002",
       "montant": 200000,
       "stage": "qualification"
     }
   },
   "stats": {
     "skills": 57,
-    "lastUpdate": "2026-02-01T04:00:00Z"
+    "lastUpdate": "2026-02-01T04:10:08.836945"
   }
 }
