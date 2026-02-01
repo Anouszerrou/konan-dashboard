@@ -1,0 +1,49 @@
+{
+  "clients": {
+    "cli_001": {
+      "id": "cli_001",
+      "nom": "ARMK TRANS",
+      "type": "PME",
+      "secteur": "Transport",
+      "contact": "+212600000001",
+      "score": 85,
+      "statut": "actif"
+    },
+    "cli_002": {
+      "id": "cli_002",
+      "nom": "GreenHash Maroc",
+      "type": "Startup",
+      "secteur": "Crypto/Tech",
+      "contact": "+212613452641",
+      "score": 95,
+      "statut": "actif"
+    },
+    "cli_003": {
+      "id": "cli_003",
+      "nom": "Cabinet Zerrouki",
+      "type": "LIBERAL",
+      "secteur": "Juridique",
+      "contact": "+212661361416",
+      "score": 90,
+      "statut": "actif"
+    }
+  },
+  "pipeline": {
+    "deal_001": {
+      "titre": "Credit Equipement Camion",
+      "client": "ARMK TRANS",
+      "montant": 500000,
+      "stage": "proposition"
+    },
+    "deal_002": {
+      "titre": "Financement Mining",
+      "client": "GreenHash Maroc",
+      "montant": 200000,
+      "stage": "qualification"
+    }
+  },
+  "stats": {
+    "skills": 57,
+    "lastUpdate": "2026-02-01T04:00:00Z"
+  }
+}
