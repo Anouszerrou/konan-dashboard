@@ -102,7 +102,22 @@ export default function Home() {
   }, [])
 
   if (!data) {
-    return <div style={styles.loading}>Chargement...</div>
+    return (
+      <div className="loading">
+        <span>Chargement...</span>
+        <style jsx>{`
+          .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+            color: #fff;
+            font-size: 1.5em;
+          }
+        `}</style>
+      </div>
+    )
   }
 
   const clients = Object.values(data.clients)
