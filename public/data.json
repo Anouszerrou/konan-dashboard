@@ -5,45 +5,82 @@
       "nom": "ARMK TRANS",
       "type": "PME",
       "secteur": "Transport",
-      "contact": "+212600000001",
+      "contact": {
+        "nom": "M. Armani",
+        "tel": "+212600000001",
+        "email": "contact@armktrans.ma"
+      },
+      "adresse": "Oujda, Maroc",
+      "produits": ["Compte Pro", "Credit Equipement"],
+      "chiffre_affaires": 5000000,
       "score": 85,
-      "statut": "actif"
+      "statut": "actif",
+      "date_creation": "2024-01-15",
+      "derniere_interaction": "2026-01-25"
     },
     "cli_002": {
       "id": "cli_002",
       "nom": "GreenHash Maroc",
       "type": "Startup",
       "secteur": "Crypto/Tech",
-      "contact": "+212613452641",
+      "contact": {
+        "nom": "Anas Zerrouki",
+        "tel": "+212613452641",
+        "email": "zerrouki.anass@gmail.com"
+      },
+      "adresse": "Oujda, Maroc",
+      "produits": ["Compte Pro", "E-commerce"],
+      "chiffre_affaires": 500000,
       "score": 95,
-      "statut": "actif"
+      "statut": "actif",
+      "date_creation": "2025-06-01",
+      "derniere_interaction": "2026-02-01"
     },
     "cli_003": {
       "id": "cli_003",
       "nom": "Cabinet Zerrouki",
       "type": "LIBERAL",
       "secteur": "Juridique",
-      "contact": "+212661361416",
+      "contact": {
+        "nom": "Maitre Zerrouki",
+        "tel": "+212661361416",
+        "email": "cabinet.zerrouki@gmail.com"
+      },
+      "adresse": "Oujda, Maroc",
+      "produits": ["Compte Pro Liberal"],
+      "chiffre_affaires": 800000,
       "score": 90,
-      "statut": "actif"
+      "statut": "actif",
+      "date_creation": "2020-03-01",
+      "derniere_interaction": "2026-01-30"
     }
   },
   "pipeline": {
     "deal_001": {
+      "id": "deal_001",
       "titre": "Credit Equipement Camion",
-      "client": "cli_001",
+      "client_id": "cli_001",
       "montant": 500000,
-      "stage": "proposition"
+      "stage": "proposition",
+      "probabilite": 70,
+      "date_cloture_prevue": "2026-02-28",
+      "responsable": "Anas Zerrouki"
     },
     "deal_002": {
+      "id": "deal_002",
       "titre": "Financement Materiel Mining",
-      "client": "cli_002",
+      "client_id": "cli_002",
       "montant": 200000,
-      "stage": "qualification"
+      "stage": "qualification",
+      "probabilite": 50,
+      "date_cloture_prevue": "2026-03-15",
+      "responsable": "Anas Zerrouki"
     }
   },
   "stats": {
-    "skills": 70,
-    "lastUpdate": "2026-02-01T20:26:37.908525"
+    "skills": 103,
+    "plugins": 4,
+    "crons": 8,
+    "lastUpdate": "2026-02-01T22:40:04"
   }
 }
