@@ -41,7 +41,7 @@ export default function KonanDashboard() {
   }, []);
 
   useEffect(() => {
-    fetch('/data.json').then(r => r.json()).then(setData).catch(() => {});
+    fetch('/data.json').then(r => r.json()).then(d => setData({ clients: Array.isArray(d.clients) ? d.clients : [], deals: Array.isArray(d.deals) ? d.deals : [], skills: Array.isArray(d.skills) ? d.skills : [] })).catch(() => {});
     fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true')
       .then(r => r.json()).then(setCrypto).catch(() => {});
     fetch('https://v6.exchangerate-api.com/v6/demo/latest/MAD')
@@ -340,3 +340,4 @@ export default function KonanDashboard() {
     </>
   );
 }
+

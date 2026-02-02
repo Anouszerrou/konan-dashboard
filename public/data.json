@@ -1,8 +1,9 @@
 {
-  "clients": {},
-  "pipeline": {},
+  "clients": [],
+  "deals": [],
+  "skills": [{"name": "jarvis"}, {"name": "crm"}, {"name": "credit-simulator"}, {"name": "business-intel"}, {"name": "linkedin-manager"}, {"name": "pdf-generator"}],
   "stats": {
-    "skills": 154,
-    "lastUpdate": "2026-02-02T20:13:00.715486"
+    "skillsCount": 154,
+    "lastUpdate": "2026-02-02T20:20:00"
   }
 }
