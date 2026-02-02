@@ -619,14 +619,20 @@
       "name": "youtube-dl"
     },
     {
+      "name": "flux-image-gen"
+    },
+    {
       "name": "jarvis"
+    },
+    {
+      "name": "pc-control"
     }
   ],
   "stats": {
-    "skillsCount": 155,
+    "skillsCount": 157,
     "clientsCount": 12,
     "dealsCount": 8,
     "pipelineTotal": 27250000,
-    "lastUpdate": "2026-02-02T20:27:32.369163"
+    "lastUpdate": "2026-02-02T22:00:04.960436"
   }
 }
