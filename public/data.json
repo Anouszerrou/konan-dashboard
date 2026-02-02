@@ -619,20 +619,53 @@
       "name": "youtube-dl"
     },
     {
+      "name": "document-organizer"
+    },
+    {
+      "name": "file-sender"
+    },
+    {
       "name": "flux-image-gen"
     },
     {
       "name": "jarvis"
     },
     {
+      "name": "konan-control"
+    },
+    {
+      "name": "mt5-alerts"
+    },
+    {
+      "name": "mt5-analyzer"
+    },
+    {
+      "name": "mt5-bot"
+    },
+    {
+      "name": "mt5-guardian"
+    },
+    {
+      "name": "mt5-market"
+    },
+    {
+      "name": "mt5-status"
+    },
+    {
+      "name": "mt5-study"
+    },
+    {
+      "name": "mt5-trade"
+    },
+    {
       "name": "pc-control"
     }
   ],
   "stats": {
-    "skillsCount": 157,
+    "skillsCount": 168,
     "clientsCount": 12,
     "dealsCount": 8,
     "pipelineTotal": 27250000,
-    "lastUpdate": "2026-02-02T22:00:04.960436"
+    "lastUpdate": "2026-02-03T00:00:04.544618"
   }
 }
