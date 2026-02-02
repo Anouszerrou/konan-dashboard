@@ -1,9 +1,632 @@
 {
-  "clients": [],
-  "deals": [],
-  "skills": [{"name": "jarvis"}, {"name": "crm"}, {"name": "credit-simulator"}, {"name": "business-intel"}, {"name": "linkedin-manager"}, {"name": "pdf-generator"}],
+  "clients": [
+    {
+      "id": "cli_001",
+      "name": "MAROC TEXTILE SARL",
+      "type": "actif",
+      "sector": "Textile & Confection",
+      "contact": "m.alami@maroctextile.ma",
+      "score": 85
+    },
+    {
+      "id": "cli_002",
+      "name": "ATLAS IMPORT EXPORT",
+      "type": "actif",
+      "sector": "Commerce International",
+      "contact": "direction@atlasie.ma",
+      "score": 92
+    },
+    {
+      "id": "cli_003",
+      "name": "OUJDA AGRO SA",
+      "type": "actif",
+      "sector": "Agroalimentaire",
+      "contact": "a.benali@oujdaagro.ma",
+      "score": 78
+    },
+    {
+      "id": "cli_004",
+      "name": "BERKANE CONSTRUCTION",
+      "type": "actif",
+      "sector": "BTP",
+      "contact": "h.tazi@berkanebtp.ma",
+      "score": 88
+    },
+    {
+      "id": "cli_005",
+      "name": "ORIENTAL PHARMA",
+      "type": "actif",
+      "sector": "Pharmacie",
+      "contact": "s.naciri@orientalpharma.ma",
+      "score": 95
+    },
+    {
+      "id": "cli_006",
+      "name": "NADOR LOGISTICS",
+      "type": "prospect",
+      "sector": "Transport & Logistique",
+      "contact": "k.rifi@nadorlog.ma",
+      "score": 65
+    },
+    {
+      "id": "cli_007",
+      "name": "OUJDA MOTORS",
+      "type": "actif",
+      "sector": "Automobile",
+      "contact": "y.chami@oujdamotors.ma",
+      "score": 82
+    },
+    {
+      "id": "cli_008",
+      "name": "ORIENTAL TECH SOLUTIONS",
+      "type": "prospect",
+      "sector": "IT & Services",
+      "contact": "n.fassi@orientaltech.ma",
+      "score": 70
+    },
+    {
+      "id": "cli_009",
+      "name": "CAFE REGAL SARL",
+      "type": "actif",
+      "sector": "Restauration",
+      "contact": "r.amrani@caferegal.ma",
+      "score": 75
+    },
+    {
+      "id": "cli_010",
+      "name": "METALUX ORIENTAL",
+      "type": "actif",
+      "sector": "Métallurgie",
+      "contact": "f.bennani@metalux.ma",
+      "score": 80
+    },
+    {
+      "id": "cli_011",
+      "name": "CLINIQUE AL AMAL",
+      "type": "actif",
+      "sector": "Santé",
+      "contact": "dr.idrissi@alamal.ma",
+      "score": 90
+    },
+    {
+      "id": "cli_012",
+      "name": "HOTEL ANGAD",
+      "type": "prospect",
+      "sector": "Hôtellerie",
+      "contact": "m.squalli@hotelangad.ma",
+      "score": 68
+    }
+  ],
+  "deals": [
+    {
+      "id": "deal_001",
+      "title": "Crédit Équipement - Machines Textile",
+      "client": "cli_001",
+      "value": 2500000,
+      "stage": "negotiation"
+    },
+    {
+      "id": "deal_002",
+      "title": "Ligne de Trésorerie",
+      "client": "cli_002",
+      "value": 5000000,
+      "stage": "proposal"
+    },
+    {
+      "id": "deal_003",
+      "title": "Crédit Investissement - Extension Usine",
+      "client": "cli_003",
+      "value": 8000000,
+      "stage": "qualification"
+    },
+    {
+      "id": "deal_004",
+      "title": "Leasing Engins BTP",
+      "client": "cli_004",
+      "value": 3500000,
+      "stage": "closing"
+    },
+    {
+      "id": "deal_005",
+      "title": "Crédit Stock Pharmacie",
+      "client": "cli_005",
+      "value": 1500000,
+      "stage": "won"
+    },
+    {
+      "id": "deal_006",
+      "title": "Financement Flotte Camions",
+      "client": "cli_006",
+      "value": 4200000,
+      "stage": "proposal"
+    },
+    {
+      "id": "deal_007",
+      "title": "Crédit Équipement Garage",
+      "client": "cli_007",
+      "value": 1800000,
+      "stage": "negotiation"
+    },
+    {
+      "id": "deal_008",
+      "title": "Crédit Rénovation Restaurant",
+      "client": "cli_009",
+      "value": 750000,
+      "stage": "closing"
+    }
+  ],
+  "skills": [
+    {
+      "name": "1password"
+    },
+    {
+      "name": "app-deployer"
+    },
+    {
+      "name": "apple-notes"
+    },
+    {
+      "name": "apple-reminders"
+    },
+    {
+      "name": "backup-manager"
+    },
+    {
+      "name": "bank-assistant"
+    },
+    {
+      "name": "bank-manager"
+    },
+    {
+      "name": "bear-notes"
+    },
+    {
+      "name": "better-memory"
+    },
+    {
+      "name": "bird"
+    },
+    {
+      "name": "blogwatcher"
+    },
+    {
+      "name": "blucli"
+    },
+    {
+      "name": "bluebubbles"
+    },
+    {
+      "name": "brave-search"
+    },
+    {
+      "name": "business-intel"
+    },
+    {
+      "name": "calculator"
+    },
+    {
+      "name": "calendar"
+    },
+    {
+      "name": "camsnap"
+    },
+    {
+      "name": "canvas"
+    },
+    {
+      "name": "clawdhub"
+    },
+    {
+      "name": "clawhub"
+    },
+    {
+      "name": "client-crm"
+    },
+    {
+      "name": "clipboard-manager"
+    },
+    {
+      "name": "coding-agent"
+    },
+    {
+      "name": "contract-generator"
+    },
+    {
+      "name": "credit-simulator"
+    },
+    {
+      "name": "crm-calendar-bridge"
+    },
+    {
+      "name": "crm-database"
+    },
+    {
+      "name": "crypto-alerts"
+    },
+    {
+      "name": "crypto-analytics"
+    },
+    {
+      "name": "crypto-tracker"
+    },
+    {
+      "name": "crypto-trading"
+    },
+    {
+      "name": "daily-briefing"
+    },
+    {
+      "name": "daily-digest"
+    },
+    {
+      "name": "dashboard"
+    },
+    {
+      "name": "discord"
+    },
+    {
+      "name": "document-converter"
+    },
+    {
+      "name": "document-scanner"
+    },
+    {
+      "name": "eightctl"
+    },
+    {
+      "name": "email-composer"
+    },
+    {
+      "name": "email-labeler"
+    },
+    {
+      "name": "email-sender"
+    },
+    {
+      "name": "expense-tracker"
+    },
+    {
+      "name": "file-compressor"
+    },
+    {
+      "name": "file-organizer"
+    },
+    {
+      "name": "file-reader"
+    },
+    {
+      "name": "financial-market-analysis"
+    },
+    {
+      "name": "food-order"
+    },
+    {
+      "name": "gemini"
+    },
+    {
+      "name": "geolocation"
+    },
+    {
+      "name": "gifgrep"
+    },
+    {
+      "name": "github"
+    },
+    {
+      "name": "gmail-integration"
+    },
+    {
+      "name": "goals-tracker"
+    },
+    {
+      "name": "gog"
+    },
+    {
+      "name": "google-calendar"
+    },
+    {
+      "name": "google-workspace"
+    },
+    {
+      "name": "goplaces"
+    },
+    {
+      "name": "greenhash-monitor"
+    },
+    {
+      "name": "greenhash-tracker"
+    },
+    {
+      "name": "habit-tracker"
+    },
+    {
+      "name": "hash-generator"
+    },
+    {
+      "name": "himalaya"
+    },
+    {
+      "name": "image-resizer"
+    },
+    {
+      "name": "imsg"
+    },
+    {
+      "name": "invoice-generator"
+    },
+    {
+      "name": "jarvis-core"
+    },
+    {
+      "name": "json-viewer"
+    },
+    {
+      "name": "knowledge-base"
+    },
+    {
+      "name": "konan-hub"
+    },
+    {
+      "name": "konan-memory"
+    },
+    {
+      "name": "konan-memory-rag"
+    },
+    {
+      "name": "konan-personality"
+    },
+    {
+      "name": "legal-briefing"
+    },
+    {
+      "name": "leonardo-ai"
+    },
+    {
+      "name": "link-shortener"
+    },
+    {
+      "name": "linkedin-manager"
+    },
+    {
+      "name": "local-places"
+    },
+    {
+      "name": "market-analysis"
+    },
+    {
+      "name": "market-news"
+    },
+    {
+      "name": "mcporter"
+    },
+    {
+      "name": "meeting-assistant"
+    },
+    {
+      "name": "model-usage"
+    },
+    {
+      "name": "morning-manifesto"
+    },
+    {
+      "name": "multi-agent"
+    },
+    {
+      "name": "nano-banana-pro"
+    },
+    {
+      "name": "nano-pdf"
+    },
+    {
+      "name": "network-tools"
+    },
+    {
+      "name": "notion"
+    },
+    {
+      "name": "obsidian"
+    },
+    {
+      "name": "official-portals"
+    },
+    {
+      "name": "openai-image-gen"
+    },
+    {
+      "name": "openai-whisper"
+    },
+    {
+      "name": "openai-whisper-api"
+    },
+    {
+      "name": "openhue"
+    },
+    {
+      "name": "oracle"
+    },
+    {
+      "name": "ordercli"
+    },
+    {
+      "name": "password-manager"
+    },
+    {
+      "name": "pdf-generator"
+    },
+    {
+      "name": "pdf-summarizer"
+    },
+    {
+      "name": "pdf-to-excel"
+    },
+    {
+      "name": "peekaboo"
+    },
+    {
+      "name": "proactive-notifications"
+    },
+    {
+      "name": "pushover"
+    },
+    {
+      "name": "qr-generator"
+    },
+    {
+      "name": "quick-actions"
+    },
+    {
+      "name": "quick-notes"
+    },
+    {
+      "name": "reminders"
+    },
+    {
+      "name": "sag"
+    },
+    {
+      "name": "scheduler"
+    },
+    {
+      "name": "screen-time"
+    },
+    {
+      "name": "screenshot"
+    },
+    {
+      "name": "session-logs"
+    },
+    {
+      "name": "sherpa-onnx-tts"
+    },
+    {
+      "name": "signal"
+    },
+    {
+      "name": "skill-creator"
+    },
+    {
+      "name": "slack"
+    },
+    {
+      "name": "smart-alerts"
+    },
+    {
+      "name": "smart-notifications"
+    },
+    {
+      "name": "smart-reminders"
+    },
+    {
+      "name": "smart-scheduler"
+    },
+    {
+      "name": "songsee"
+    },
+    {
+      "name": "sonoscli"
+    },
+    {
+      "name": "spotify-player"
+    },
+    {
+      "name": "stock-market-pro"
+    },
+    {
+      "name": "study-planner"
+    },
+    {
+      "name": "summarize"
+    },
+    {
+      "name": "system-control"
+    },
+    {
+      "name": "system-info"
+    },
+    {
+      "name": "telegram"
+    },
+    {
+      "name": "telegram-cleaner"
+    },
+    {
+      "name": "text-to-speech"
+    },
+    {
+      "name": "text-utils"
+    },
+    {
+      "name": "things-mac"
+    },
+    {
+      "name": "time-tracker"
+    },
+    {
+      "name": "timer-stopwatch"
+    },
+    {
+      "name": "tmux"
+    },
+    {
+      "name": "translator"
+    },
+    {
+      "name": "trello"
+    },
+    {
+      "name": "unit-converter"
+    },
+    {
+      "name": "veille-economique"
+    },
+    {
+      "name": "video-frames"
+    },
+    {
+      "name": "voice-call"
+    },
+    {
+      "name": "voice-commands"
+    },
+    {
+      "name": "voice-mode"
+    },
+    {
+      "name": "voice-notes"
+    },
+    {
+      "name": "wacli"
+    },
+    {
+      "name": "weather"
+    },
+    {
+      "name": "web-scraper"
+    },
+    {
+      "name": "web-search"
+    },
+    {
+      "name": "whatsapp-manager"
+    },
+    {
+      "name": "work-mode"
+    },
+    {
+      "name": "yahoo-finance"
+    },
+    {
+      "name": "youtube-dl"
+    },
+    {
+      "name": "jarvis"
+    }
+  ],
   "stats": {
-    "skillsCount": 154,
-    "lastUpdate": "2026-02-02T20:20:00"
+    "skillsCount": 155,
+    "clientsCount": 12,
+    "dealsCount": 8,
+    "pipelineTotal": 27250000,
+    "lastUpdate": "2026-02-02T20:27:32.369163"
   }
 }

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Sync Dashboard - Met a jour le dashboard Vercel avec les donnees locales
-Konan execute ce script pour push les MAJ
 """
 
 import json
@@ -14,14 +13,7 @@ CRM_DIR = os.path.expanduser("~/.clawdbot/crm")
 DASHBOARD_DIR = os.path.expanduser("~/clawd/dashboard-vercel")
 DATA_FILE = os.path.join(DASHBOARD_DIR, "public", "data.json")
 SKILLS_DIR = os.path.expanduser("~/clawd/skills")
-
-
-def count_skills():
-    """Compter les skills"""
-    try:
-        return len([d for d in os.listdir(SKILLS_DIR) if os.path.isdir(os.path.join(SKILLS_DIR, d))])
-    except:
-        return 0
+SKILLS_DIR_ALT = r"D:\clawdbot\moltbot\skills"
 
 
 def load_json(filepath, default=None):
@@ -34,41 +26,79 @@ def load_json(filepath, default=None):
         return default
 
 
+def get_skills_list():
+    """Recuperer tous les skills"""
+    skills_list = []
+    seen = set()
+    for path in [SKILLS_DIR, SKILLS_DIR_ALT]:
+        try:
+            if os.path.exists(path):
+                for d in os.listdir(path):
+                    if os.path.isdir(os.path.join(path, d)) and not d.startswith('.') and d not in seen:
+                        skills_list.append({"name": d})
+                        seen.add(d)
+        except:
+            pass
+    return skills_list
+
+
 def sync_data():
-    """Synchronise les donnees CRM vers le dashboard"""
+    """Synchronise les donnees vers le dashboard"""
     
-    # Charger donnees locales
+    # Charger donnees existantes du dashboard
+    existing = load_json(DATA_FILE, {})
+    existing_clients = existing.get("clients", [])
+    existing_deals = existing.get("deals", [])
+    
+    # Charger donnees CRM si disponibles
     clients_data = load_json(os.path.join(CRM_DIR, "clients.json"), {"clients": {}})
     pipeline_data = load_json(os.path.join(CRM_DIR, "pipeline.json"), {"deals": {}})
     
-    # Simplifier pour le dashboard
-    clients = {}
+    # Convertir CRM en listes si disponible
+    crm_clients = []
     for cid, client in clients_data.get("clients", {}).items():
-        clients[cid] = {
+        crm_clients.append({
             "id": cid,
-            "nom": client.get("nom", ""),
-            "type": client.get("type", ""),
-            "secteur": client.get("secteur", ""),
-            "contact": client.get("contact", {}).get("tel", ""),
-            "score": client.get("score", 0),
-            "statut": client.get("statut", "actif")
-        }
+            "name": client.get("nom", client.get("name", "")),
+            "type": client.get("statut", client.get("type", "actif")),
+            "sector": client.get("secteur", client.get("sector", "")),
+            "contact": client.get("contact", {}).get("email", client.get("email", "")),
+            "score": client.get("score", 75)
+        })
     
-    pipeline = {}
+    crm_deals = []
     for did, deal in pipeline_data.get("deals", {}).items():
-        pipeline[did] = {
-            "titre": deal.get("titre", ""),
+        crm_deals.append({
+            "id": did,
+            "title": deal.get("titre", deal.get("title", "")),
             "client": deal.get("client_id", ""),
-            "montant": deal.get("montant", 0),
-            "stage": deal.get("stage", "")
-        }
+            "value": deal.get("montant", deal.get("value", 0)),
+            "stage": deal.get("stage", "negotiation")
+        })
+    
+    # Utiliser CRM si disponible, sinon garder existant
+    clients = crm_clients if crm_clients else existing_clients
+    deals = crm_deals if crm_deals else existing_deals
+    
+    # Recuperer skills
+    skills_list = get_skills_list()
+    
+    # S'assurer que clients et deals sont des listes
+    if not isinstance(clients, list):
+        clients = []
+    if not isinstance(deals, list):
+        deals = []
     
     # Construire data.json
     data = {
         "clients": clients,
-        "pipeline": pipeline,
+        "deals": deals,
+        "skills": skills_list,
         "stats": {
-            "skills": count_skills(),
+            "skillsCount": len(skills_list),
+            "clientsCount": len(clients),
+            "dealsCount": len(deals),
+            "pipelineTotal": sum(d.get("value", 0) for d in deals if isinstance(d, dict)),
             "lastUpdate": datetime.now().isoformat()
         }
     }
@@ -80,8 +110,8 @@ def sync_data():
     
     print(f"[OK] data.json mis a jour")
     print(f"    - {len(clients)} clients")
-    print(f"    - {len(pipeline)} deals")
-    print(f"    - {data['stats']['skills']} skills")
+    print(f"    - {len(deals)} deals")
+    print(f"    - {len(skills_list)} skills")
     
     return data
 
