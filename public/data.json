@@ -619,7 +619,16 @@
       "name": "youtube-dl"
     },
     {
+      "name": "agent-orchestrator"
+    },
+    {
+      "name": "client-automator"
+    },
+    {
       "name": "document-organizer"
+    },
+    {
+      "name": "email-autopilot"
     },
     {
       "name": "file-sender"
@@ -628,10 +637,19 @@
       "name": "flux-image-gen"
     },
     {
+      "name": "goal-trader"
+    },
+    {
       "name": "jarvis"
     },
     {
+      "name": "konan-autopilot"
+    },
+    {
       "name": "konan-control"
+    },
+    {
+      "name": "market-predictor"
     },
     {
       "name": "mt5-alerts"
@@ -659,13 +677,34 @@
     },
     {
       "name": "pc-control"
+    },
+    {
+      "name": "performance-coach"
+    },
+    {
+      "name": "portfolio-sync"
+    },
+    {
+      "name": "security-monitor"
+    },
+    {
+      "name": "tax-helper"
+    },
+    {
+      "name": "telegram-commander"
+    },
+    {
+      "name": "web-monitor"
+    },
+    {
+      "name": "_archived"
     }
   ],
   "stats": {
-    "skillsCount": 168,
+    "skillsCount": 181,
     "clientsCount": 12,
     "dealsCount": 8,
     "pipelineTotal": 27250000,
-    "lastUpdate": "2026-02-03T16:00:05.074341"
+    "lastUpdate": "2026-02-03T18:00:35.658065"
   }
 }
