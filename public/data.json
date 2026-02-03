@@ -1,106 +1,186 @@
 {
-  "clients": [
+  "trading": {
+    "mt5": {
+      "status": "online",
+      "balance": 99565.5,
+      "equity": 99565.5,
+      "profit_today": -51.71,
+      "profit_week": -64.26,
+      "profit_month": -63.86,
+      "trades_today": 133,
+      "winrate": 28.6,
+      "open_positions": 0,
+      "drawdown": 0.0,
+      "last_update": "2026-02-03T19:02:52.822058"
+    },
+    "bot": {
+      "status": "stopped",
+      "last_signal": "N/A",
+      "last_check": "2026-02-03T19:02:52.970431"
+    },
+    "wave_catcher": {
+      "status": "stopped",
+      "last_signal": "N/A"
+    }
+  },
+  "alerts": [
     {
-      "id": "cli_001",
-      "name": "MAROC TEXTILE SARL",
-      "type": "actif",
-      "sector": "Textile & Confection",
-      "contact": "m.alami@maroctextile.ma",
-      "score": 85
+      "id": "auto_deal_deal_001",
+      "type": "opportunite",
+      "priorite": "moyenne",
+      "client": "cli_001",
+      "message": "Deal 'Crédit Équipement Textile' en attente",
+      "date_creation": "2026-02-03",
+      "auto": true
     },
     {
-      "id": "cli_002",
-      "name": "ATLAS IMPORT EXPORT",
-      "type": "actif",
-      "sector": "Commerce International",
-      "contact": "direction@atlasie.ma",
-      "score": 92
-    },
-    {
-      "id": "cli_003",
-      "name": "OUJDA AGRO SA",
-      "type": "actif",
-      "sector": "Agroalimentaire",
-      "contact": "a.benali@oujdaagro.ma",
-      "score": 78
-    },
-    {
-      "id": "cli_004",
-      "name": "BERKANE CONSTRUCTION",
-      "type": "actif",
-      "sector": "BTP",
-      "contact": "h.tazi@berkanebtp.ma",
-      "score": 88
-    },
-    {
-      "id": "cli_005",
-      "name": "ORIENTAL PHARMA",
-      "type": "actif",
-      "sector": "Pharmacie",
-      "contact": "s.naciri@orientalpharma.ma",
-      "score": 95
-    },
-    {
-      "id": "cli_006",
-      "name": "NADOR LOGISTICS",
-      "type": "prospect",
-      "sector": "Transport & Logistique",
-      "contact": "k.rifi@nadorlog.ma",
-      "score": 65
-    },
-    {
-      "id": "cli_007",
-      "name": "OUJDA MOTORS",
-      "type": "actif",
-      "sector": "Automobile",
-      "contact": "y.chami@oujdamotors.ma",
-      "score": 82
-    },
-    {
-      "id": "cli_008",
-      "name": "ORIENTAL TECH SOLUTIONS",
-      "type": "prospect",
-      "sector": "IT & Services",
-      "contact": "n.fassi@orientaltech.ma",
-      "score": 70
-    },
-    {
-      "id": "cli_009",
-      "name": "CAFE REGAL SARL",
-      "type": "actif",
-      "sector": "Restauration",
-      "contact": "r.amrani@caferegal.ma",
-      "score": 75
-    },
-    {
-      "id": "cli_010",
-      "name": "METALUX ORIENTAL",
-      "type": "actif",
-      "sector": "Métallurgie",
-      "contact": "f.bennani@metalux.ma",
-      "score": 80
-    },
-    {
-      "id": "cli_011",
-      "name": "CLINIQUE AL AMAL",
-      "type": "actif",
-      "sector": "Santé",
-      "contact": "dr.idrissi@alamal.ma",
-      "score": 90
-    },
-    {
-      "id": "cli_012",
-      "name": "HOTEL ANGAD",
-      "type": "prospect",
-      "sector": "Hôtellerie",
-      "contact": "m.squalli@hotelangad.ma",
-      "score": 68
+      "id": "auto_deal_deal_002",
+      "type": "opportunite",
+      "priorite": "moyenne",
+      "client": "cli_002",
+      "message": "Deal 'Ligne de Trésorerie' en attente",
+      "date_creation": "2026-02-03",
+      "auto": true
     }
   ],
+  "kpis": {
+    "conquete_clients": {
+      "cible": 5,
+      "realise": 0,
+      "unite": "clients"
+    },
+    "pnb_mensuel": {
+      "cible": 50000,
+      "realise": 0,
+      "unite": "MAD"
+    },
+    "credits_places": {
+      "cible": 3,
+      "realise": 0,
+      "unite": "dossiers"
+    },
+    "montant_credits": {
+      "cible": 2000000,
+      "realise": 0,
+      "unite": "MAD"
+    },
+    "rdv_clients": {
+      "cible": 20,
+      "realise": 0,
+      "unite": "RDV"
+    },
+    "equipement": {
+      "cible": 10,
+      "realise": 0,
+      "unite": "produits"
+    }
+  },
+  "planning": {
+    "rdv_today": [],
+    "relances": [
+      {
+        "client": "ATLAS CONSULTING",
+        "dernier_contact": "2026-01-15",
+        "action": "Suivi crédit équipement",
+        "jours": 19
+      },
+      {
+        "client": "NEXUS TECH",
+        "dernier_contact": "2026-01-20",
+        "action": "Renouvellement FC",
+        "jours": 14
+      },
+      {
+        "client": "MAROC TEXTILE",
+        "dernier_contact": "2026-01-25",
+        "action": "Proposition assurance",
+        "jours": 9
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "type": "warning",
+      "icon": "⚠️",
+      "message": "Win rate faible - considérer pause trading"
+    },
+    {
+      "type": "info",
+      "icon": "📊",
+      "message": "1 deals près de clôturer (3.5M MAD)"
+    }
+  ],
+  "clients": {
+    "cli_001": {
+      "id": "cli_001",
+      "nom": "ARMK TRANS",
+      "type": "PME",
+      "secteur": "Transport",
+      "contact": {
+        "nom": "M. Armani",
+        "tel": "+212600000001",
+        "email": "contact@armktrans.ma"
+      },
+      "adresse": "Oujda, Maroc",
+      "produits": [
+        "Compte Pro",
+        "Credit Equipement"
+      ],
+      "chiffre_affaires": 5000000,
+      "statut": "actif",
+      "score": 85,
+      "date_creation": "2024-01-15",
+      "derniere_interaction": "2026-01-25",
+      "notes": "Client fidele, demande regulierement des bilans"
+    },
+    "cli_002": {
+      "id": "cli_002",
+      "nom": "GreenHash Maroc",
+      "type": "Startup",
+      "secteur": "Crypto/Tech",
+      "contact": {
+        "nom": "Anas Zerrouki",
+        "tel": "+212613452641",
+        "email": "zerrouki.anass@gmail.com"
+      },
+      "adresse": "Oujda, Maroc",
+      "produits": [
+        "Compte Pro",
+        "E-commerce"
+      ],
+      "chiffre_affaires": 500000,
+      "statut": "actif",
+      "score": 95,
+      "date_creation": "2025-06-01",
+      "derniere_interaction": "2026-02-01",
+      "notes": "Projet crypto mining, suivi regulier"
+    },
+    "cli_003": {
+      "id": "cli_003",
+      "nom": "Cabinet Zerrouki",
+      "type": "LIBERAL",
+      "secteur": "Juridique",
+      "contact": {
+        "nom": "Maitre Zerrouki",
+        "tel": "+212661361416",
+        "email": "cabinet.zerrouki@gmail.com"
+      },
+      "adresse": "Oujda, Maroc",
+      "produits": [
+        "Compte Pro Liberal"
+      ],
+      "chiffre_affaires": 800000,
+      "statut": "actif",
+      "score": 90,
+      "date_creation": "2020-03-01",
+      "derniere_interaction": "2026-01-30",
+      "notes": "Pere, avocat, briefing juridique quotidien"
+    }
+  },
   "deals": [
     {
       "id": "deal_001",
-      "title": "Crédit Équipement - Machines Textile",
+      "title": "Crédit Équipement Textile",
       "client": "cli_001",
       "value": 2500000,
       "stage": "negotiation"
@@ -114,7 +194,7 @@
     },
     {
       "id": "deal_003",
-      "title": "Crédit Investissement - Extension Usine",
+      "title": "Extension Usine",
       "client": "cli_003",
       "value": 8000000,
       "stage": "qualification"
@@ -132,32 +212,14 @@
       "client": "cli_005",
       "value": 1500000,
       "stage": "won"
-    },
-    {
-      "id": "deal_006",
-      "title": "Financement Flotte Camions",
-      "client": "cli_006",
-      "value": 4200000,
-      "stage": "proposal"
-    },
-    {
-      "id": "deal_007",
-      "title": "Crédit Équipement Garage",
-      "client": "cli_007",
-      "value": 1800000,
-      "stage": "negotiation"
-    },
-    {
-      "id": "deal_008",
-      "title": "Crédit Rénovation Restaurant",
-      "client": "cli_009",
-      "value": 750000,
-      "stage": "closing"
     }
   ],
   "skills": [
     {
       "name": "1password"
+    },
+    {
+      "name": "agent-orchestrator"
     },
     {
       "name": "app-deployer"
@@ -167,9 +229,6 @@
     },
     {
       "name": "apple-reminders"
-    },
-    {
-      "name": "backup-manager"
     },
     {
       "name": "bank-assistant"
@@ -202,9 +261,6 @@
       "name": "business-intel"
     },
     {
-      "name": "calculator"
-    },
-    {
       "name": "calendar"
     },
     {
@@ -214,16 +270,16 @@
       "name": "canvas"
     },
     {
-      "name": "clawdhub"
+      "name": "ccpro-dashboard"
     },
     {
       "name": "clawhub"
     },
     {
-      "name": "client-crm"
+      "name": "client-automator"
     },
     {
-      "name": "clipboard-manager"
+      "name": "client-crm"
     },
     {
       "name": "coding-agent"
@@ -268,10 +324,16 @@
       "name": "document-converter"
     },
     {
+      "name": "document-organizer"
+    },
+    {
       "name": "document-scanner"
     },
     {
       "name": "eightctl"
+    },
+    {
+      "name": "email-autopilot"
     },
     {
       "name": "email-composer"
@@ -280,22 +342,19 @@
       "name": "email-labeler"
     },
     {
-      "name": "email-sender"
-    },
-    {
       "name": "expense-tracker"
-    },
-    {
-      "name": "file-compressor"
-    },
-    {
-      "name": "file-organizer"
     },
     {
       "name": "file-reader"
     },
     {
+      "name": "file-sender"
+    },
+    {
       "name": "financial-market-analysis"
+    },
+    {
+      "name": "flux-image-gen"
     },
     {
       "name": "food-order"
@@ -314,6 +373,9 @@
     },
     {
       "name": "gmail-integration"
+    },
+    {
+      "name": "goal-trader"
     },
     {
       "name": "goals-tracker"
@@ -337,16 +399,7 @@
       "name": "greenhash-tracker"
     },
     {
-      "name": "habit-tracker"
-    },
-    {
-      "name": "hash-generator"
-    },
-    {
       "name": "himalaya"
-    },
-    {
-      "name": "image-resizer"
     },
     {
       "name": "imsg"
@@ -355,13 +408,19 @@
       "name": "invoice-generator"
     },
     {
+      "name": "jarvis"
+    },
+    {
       "name": "jarvis-core"
     },
     {
-      "name": "json-viewer"
+      "name": "knowledge-base"
     },
     {
-      "name": "knowledge-base"
+      "name": "konan-autopilot"
+    },
+    {
+      "name": "konan-control"
     },
     {
       "name": "konan-hub"
@@ -379,12 +438,6 @@
       "name": "legal-briefing"
     },
     {
-      "name": "leonardo-ai"
-    },
-    {
-      "name": "link-shortener"
-    },
-    {
       "name": "linkedin-manager"
     },
     {
@@ -395,6 +448,9 @@
     },
     {
       "name": "market-news"
+    },
+    {
+      "name": "market-predictor"
     },
     {
       "name": "mcporter"
@@ -409,6 +465,30 @@
       "name": "morning-manifesto"
     },
     {
+      "name": "mt5-alerts"
+    },
+    {
+      "name": "mt5-analyzer"
+    },
+    {
+      "name": "mt5-bot"
+    },
+    {
+      "name": "mt5-guardian"
+    },
+    {
+      "name": "mt5-market"
+    },
+    {
+      "name": "mt5-status"
+    },
+    {
+      "name": "mt5-study"
+    },
+    {
+      "name": "mt5-trade"
+    },
+    {
       "name": "multi-agent"
     },
     {
@@ -416,9 +496,6 @@
     },
     {
       "name": "nano-pdf"
-    },
-    {
-      "name": "network-tools"
     },
     {
       "name": "notion"
@@ -448,7 +525,7 @@
       "name": "ordercli"
     },
     {
-      "name": "password-manager"
+      "name": "pc-control"
     },
     {
       "name": "pdf-generator"
@@ -463,13 +540,13 @@
       "name": "peekaboo"
     },
     {
+      "name": "performance-coach"
+    },
+    {
+      "name": "portfolio-sync"
+    },
+    {
       "name": "proactive-notifications"
-    },
-    {
-      "name": "pushover"
-    },
-    {
-      "name": "qr-generator"
     },
     {
       "name": "quick-actions"
@@ -484,13 +561,7 @@
       "name": "sag"
     },
     {
-      "name": "scheduler"
-    },
-    {
-      "name": "screen-time"
-    },
-    {
-      "name": "screenshot"
+      "name": "security-monitor"
     },
     {
       "name": "session-logs"
@@ -499,16 +570,10 @@
       "name": "sherpa-onnx-tts"
     },
     {
-      "name": "signal"
-    },
-    {
       "name": "skill-creator"
     },
     {
       "name": "slack"
-    },
-    {
-      "name": "smart-alerts"
     },
     {
       "name": "smart-notifications"
@@ -532,49 +597,28 @@
       "name": "stock-market-pro"
     },
     {
-      "name": "study-planner"
-    },
-    {
       "name": "summarize"
     },
     {
       "name": "system-control"
     },
     {
-      "name": "system-info"
-    },
-    {
-      "name": "telegram"
+      "name": "tax-helper"
     },
     {
       "name": "telegram-cleaner"
     },
     {
-      "name": "text-to-speech"
-    },
-    {
-      "name": "text-utils"
+      "name": "telegram-commander"
     },
     {
       "name": "things-mac"
     },
     {
-      "name": "time-tracker"
-    },
-    {
-      "name": "timer-stopwatch"
-    },
-    {
       "name": "tmux"
     },
     {
-      "name": "translator"
-    },
-    {
       "name": "trello"
-    },
-    {
-      "name": "unit-converter"
     },
     {
       "name": "veille-economique"
@@ -601,6 +645,9 @@
       "name": "weather"
     },
     {
+      "name": "web-monitor"
+    },
+    {
       "name": "web-scraper"
     },
     {
@@ -617,94 +664,17 @@
     },
     {
       "name": "youtube-dl"
-    },
-    {
-      "name": "agent-orchestrator"
-    },
-    {
-      "name": "client-automator"
-    },
-    {
-      "name": "document-organizer"
-    },
-    {
-      "name": "email-autopilot"
-    },
-    {
-      "name": "file-sender"
-    },
-    {
-      "name": "flux-image-gen"
-    },
-    {
-      "name": "goal-trader"
-    },
-    {
-      "name": "jarvis"
-    },
-    {
-      "name": "konan-autopilot"
-    },
-    {
-      "name": "konan-control"
-    },
-    {
-      "name": "market-predictor"
-    },
-    {
-      "name": "mt5-alerts"
-    },
-    {
-      "name": "mt5-analyzer"
-    },
-    {
-      "name": "mt5-bot"
-    },
-    {
-      "name": "mt5-guardian"
-    },
-    {
-      "name": "mt5-market"
-    },
-    {
-      "name": "mt5-status"
-    },
-    {
-      "name": "mt5-study"
-    },
-    {
-      "name": "mt5-trade"
-    },
-    {
-      "name": "pc-control"
-    },
-    {
-      "name": "performance-coach"
-    },
-    {
-      "name": "portfolio-sync"
-    },
-    {
-      "name": "security-monitor"
-    },
-    {
-      "name": "tax-helper"
-    },
-    {
-      "name": "telegram-commander"
-    },
-    {
-      "name": "web-monitor"
-    },
-    {
-      "name": "_archived"
     }
   ],
   "stats": {
-    "skillsCount": 181,
-    "clientsCount": 12,
-    "dealsCount": 8,
-    "pipelineTotal": 27250000,
-    "lastUpdate": "2026-02-03T18:00:35.658065"
+    "skillsCount": 150,
+    "clientsCount": 3,
+    "activeClients": 0,
+    "prospects": 0,
+    "dealsCount": 5,
+    "pipelineTotal": 19000000,
+    "alertsCount": 2,
+    "rdvToday": 0,
+    "lastUpdate": "2026-02-03T19:02:53.116733"
   }
 }
