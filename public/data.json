@@ -11,12 +11,12 @@
       "winrate": 28.6,
       "open_positions": 0,
       "drawdown": 0.0,
-      "last_update": "2026-02-03T19:05:32.805729"
+      "last_update": "2026-02-03T19:09:03.551126"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-03T19:05:32.956616"
+      "last_check": "2026-02-03T19:09:03.698797"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -868,6 +868,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-03T19:05:33.107746"
+    "lastUpdate": "2026-02-03T19:09:03.842437"
   }
 }
