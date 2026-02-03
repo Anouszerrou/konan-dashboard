@@ -11,12 +11,12 @@
       "winrate": 28.6,
       "open_positions": 0,
       "drawdown": 0.0,
-      "last_update": "2026-02-03T19:02:52.822058"
+      "last_update": "2026-02-03T19:05:32.805729"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-03T19:02:52.970431"
+      "last_check": "2026-02-03T19:05:32.956616"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -25,20 +25,92 @@
   },
   "alerts": [
     {
-      "id": "auto_deal_deal_001",
-      "type": "opportunite",
-      "priorite": "moyenne",
-      "client": "cli_001",
-      "message": "Deal 'Crédit Équipement Textile' en attente",
+      "id": "auto_client_cli_001",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "MAROC TEXTILE SARL",
+      "message": "Pas de contact depuis 379 jours",
       "date_creation": "2026-02-03",
       "auto": true
     },
     {
-      "id": "auto_deal_deal_002",
-      "type": "opportunite",
-      "priorite": "moyenne",
-      "client": "cli_002",
-      "message": "Deal 'Ligne de Trésorerie' en attente",
+      "id": "auto_client_cli_002",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "ATLAS IMPORT EXPORT",
+      "message": "Pas de contact depuis 377 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_003",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "OUJDA AGRO SA",
+      "message": "Pas de contact depuis 381 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_004",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "BERKANE CONSTRUCTION",
+      "message": "Pas de contact depuis 384 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_005",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "ORIENTAL PHARMA",
+      "message": "Pas de contact depuis 378 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_006",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "NADOR LOGISTICS",
+      "message": "Pas de contact depuis 389 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_007",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "OUJDA MOTORS",
+      "message": "Pas de contact depuis 380 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_008",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "ORIENTAL TECH",
+      "message": "Pas de contact depuis 394 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_009",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "MAGHREB STEEL",
+      "message": "Pas de contact depuis 376 jours",
+      "date_creation": "2026-02-03",
+      "auto": true
+    },
+    {
+      "id": "auto_client_cli_010",
+      "type": "relance",
+      "priorite": "haute",
+      "client": "OUJDA FOOD",
+      "message": "Pas de contact depuis 382 jours",
       "date_creation": "2026-02-03",
       "auto": true
     }
@@ -105,113 +177,234 @@
       "message": "Win rate faible - considérer pause trading"
     },
     {
+      "type": "opportunity",
+      "icon": "💡",
+      "message": "3 prospects à convertir ce mois"
+    },
+    {
       "type": "info",
       "icon": "📊",
       "message": "1 deals près de clôturer (3.5M MAD)"
     }
   ],
-  "clients": {
-    "cli_001": {
-      "id": "cli_001",
-      "nom": "ARMK TRANS",
-      "type": "PME",
-      "secteur": "Transport",
-      "contact": {
-        "nom": "M. Armani",
-        "tel": "+212600000001",
-        "email": "contact@armktrans.ma"
-      },
-      "adresse": "Oujda, Maroc",
-      "produits": [
-        "Compte Pro",
-        "Credit Equipement"
-      ],
-      "chiffre_affaires": 5000000,
-      "statut": "actif",
+  "clients": [
+    {
+      "email": "contact@maroctextile.ma",
+      "name": "MAROC TEXTILE SARL",
       "score": 85,
-      "date_creation": "2024-01-15",
-      "derniere_interaction": "2026-01-25",
-      "notes": "Client fidele, demande regulierement des bilans"
+      "sector": "Textile",
+      "type": "actif",
+      "phone": "0536-123-456",
+      "credits_encours": 3500000,
+      "dernier_contact": "2025-01-20",
+      "ca": 15000000,
+      "id": "cli_001"
     },
-    "cli_002": {
-      "id": "cli_002",
-      "nom": "GreenHash Maroc",
-      "type": "Startup",
-      "secteur": "Crypto/Tech",
-      "contact": {
-        "nom": "Anas Zerrouki",
-        "tel": "+212613452641",
-        "email": "zerrouki.anass@gmail.com"
-      },
-      "adresse": "Oujda, Maroc",
-      "produits": [
-        "Compte Pro",
-        "E-commerce"
-      ],
-      "chiffre_affaires": 500000,
-      "statut": "actif",
+    {
+      "email": "atlas@import.ma",
+      "name": "ATLAS IMPORT EXPORT",
+      "score": 92,
+      "sector": "Commerce",
+      "type": "actif",
+      "phone": "0536-789-012",
+      "credits_encours": 12000000,
+      "dernier_contact": "2025-01-22",
+      "ca": 45000000,
+      "id": "cli_002"
+    },
+    {
+      "email": "contact@oujdaagro.ma",
+      "name": "OUJDA AGRO SA",
+      "score": 78,
+      "sector": "Agroalimentaire",
+      "type": "actif",
+      "phone": "0536-345-678",
+      "credits_encours": 1500000,
+      "dernier_contact": "2025-01-18",
+      "ca": 8500000,
+      "id": "cli_003"
+    },
+    {
+      "email": "info@berkanebtp.ma",
+      "name": "BERKANE CONSTRUCTION",
+      "score": 88,
+      "sector": "BTP",
+      "type": "actif",
+      "phone": "0536-901-234",
+      "credits_encours": 7000000,
+      "dernier_contact": "2025-01-15",
+      "ca": 22000000,
+      "id": "cli_004"
+    },
+    {
+      "email": "pharma@oriental.ma",
+      "name": "ORIENTAL PHARMA",
       "score": 95,
-      "date_creation": "2025-06-01",
-      "derniere_interaction": "2026-02-01",
-      "notes": "Projet crypto mining, suivi regulier"
+      "sector": "Pharmacie",
+      "type": "actif",
+      "phone": "0536-567-890",
+      "credits_encours": 5500000,
+      "dernier_contact": "2025-01-21",
+      "ca": 35000000,
+      "id": "cli_005"
     },
-    "cli_003": {
-      "id": "cli_003",
-      "nom": "Cabinet Zerrouki",
-      "type": "LIBERAL",
-      "secteur": "Juridique",
-      "contact": {
-        "nom": "Maitre Zerrouki",
-        "tel": "+212661361416",
-        "email": "cabinet.zerrouki@gmail.com"
-      },
-      "adresse": "Oujda, Maroc",
-      "produits": [
-        "Compte Pro Liberal"
-      ],
-      "chiffre_affaires": 800000,
-      "statut": "actif",
+    {
+      "email": "nador.log@gmail.com",
+      "name": "NADOR LOGISTICS",
+      "score": 65,
+      "sector": "Transport",
+      "type": "prospect",
+      "phone": "0536-234-567",
+      "credits_encours": 0,
+      "dernier_contact": "2025-01-10",
+      "ca": 12000000,
+      "id": "cli_006"
+    },
+    {
+      "email": "contact@oujdamotors.ma",
+      "name": "OUJDA MOTORS",
+      "score": 82,
+      "sector": "Automobile",
+      "type": "actif",
+      "phone": "0536-678-901",
+      "credits_encours": 4500000,
+      "dernier_contact": "2025-01-19",
+      "ca": 28000000,
+      "id": "cli_007"
+    },
+    {
+      "email": "oriental.tech@gmail.com",
+      "name": "ORIENTAL TECH",
+      "score": 70,
+      "sector": "IT",
+      "type": "prospect",
+      "phone": "0536-012-345",
+      "credits_encours": 0,
+      "dernier_contact": "2025-01-05",
+      "ca": 5000000,
+      "id": "cli_008"
+    },
+    {
+      "email": "steel@maghreb.ma",
+      "name": "MAGHREB STEEL",
       "score": 90,
-      "date_creation": "2020-03-01",
-      "derniere_interaction": "2026-01-30",
-      "notes": "Pere, avocat, briefing juridique quotidien"
+      "sector": "Industrie",
+      "type": "actif",
+      "phone": "0536-456-789",
+      "credits_encours": 15000000,
+      "dernier_contact": "2025-01-23",
+      "ca": 55000000,
+      "id": "cli_009"
+    },
+    {
+      "email": "food@oujda.ma",
+      "name": "OUJDA FOOD",
+      "score": 75,
+      "sector": "Agroalimentaire",
+      "type": "actif",
+      "phone": "0536-890-123",
+      "credits_encours": 2200000,
+      "dernier_contact": "2025-01-17",
+      "ca": 9800000,
+      "id": "cli_010"
+    },
+    {
+      "email": "berkane.immo@gmail.com",
+      "name": "BERKANE IMMOBILIER",
+      "score": 68,
+      "sector": "Immobilier",
+      "type": "prospect",
+      "phone": "0536-123-789",
+      "credits_encours": 0,
+      "dernier_contact": "2025-01-08",
+      "ca": 18000000,
+      "id": "cli_011"
+    },
+    {
+      "email": "plastique@oriental.ma",
+      "name": "ORIENTAL PLASTIQUES",
+      "score": 80,
+      "sector": "Industrie",
+      "type": "actif",
+      "phone": "0536-567-012",
+      "credits_encours": 1800000,
+      "dernier_contact": "2025-01-20",
+      "ca": 7500000,
+      "id": "cli_012"
     }
-  },
+  ],
   "deals": [
     {
-      "id": "deal_001",
       "title": "Crédit Équipement Textile",
-      "client": "cli_001",
       "value": 2500000,
-      "stage": "negotiation"
+      "created": "2025-01-05",
+      "stage": "negotiation",
+      "id": "deal_001",
+      "client": "MAROC TEXTILE SARL",
+      "probability": 70
     },
     {
-      "id": "deal_002",
       "title": "Ligne de Trésorerie",
-      "client": "cli_002",
       "value": 5000000,
-      "stage": "proposal"
+      "created": "2025-01-08",
+      "stage": "proposal",
+      "id": "deal_002",
+      "client": "ATLAS IMPORT EXPORT",
+      "probability": 50
     },
     {
-      "id": "deal_003",
       "title": "Extension Usine",
-      "client": "cli_003",
       "value": 8000000,
-      "stage": "qualification"
+      "created": "2025-01-10",
+      "stage": "qualification",
+      "id": "deal_003",
+      "client": "OUJDA AGRO SA",
+      "probability": 30
     },
     {
-      "id": "deal_004",
       "title": "Leasing Engins BTP",
-      "client": "cli_004",
       "value": 3500000,
-      "stage": "closing"
+      "created": "2025-01-02",
+      "stage": "closing",
+      "id": "deal_004",
+      "client": "BERKANE CONSTRUCTION",
+      "probability": 90
     },
     {
-      "id": "deal_005",
       "title": "Crédit Stock Pharmacie",
-      "client": "cli_005",
       "value": 1500000,
-      "stage": "won"
+      "created": "2024-12-15",
+      "stage": "won",
+      "id": "deal_005",
+      "client": "ORIENTAL PHARMA",
+      "probability": 100
+    },
+    {
+      "title": "Financement Flotte",
+      "value": 4200000,
+      "created": "2025-01-12",
+      "stage": "proposal",
+      "id": "deal_006",
+      "client": "NADOR LOGISTICS",
+      "probability": 45
+    },
+    {
+      "title": "CMT Export",
+      "value": 12000000,
+      "created": "2025-01-03",
+      "stage": "negotiation",
+      "id": "deal_007",
+      "client": "MAGHREB STEEL",
+      "probability": 65
+    },
+    {
+      "title": "Crédit Immobilier Pro",
+      "value": 6500000,
+      "created": "2025-01-15",
+      "stage": "qualification",
+      "id": "deal_008",
+      "client": "BERKANE IMMOBILIER",
+      "probability": 25
     }
   ],
   "skills": [
@@ -668,13 +861,13 @@
   ],
   "stats": {
     "skillsCount": 150,
-    "clientsCount": 3,
-    "activeClients": 0,
-    "prospects": 0,
-    "dealsCount": 5,
-    "pipelineTotal": 19000000,
-    "alertsCount": 2,
+    "clientsCount": 12,
+    "activeClients": 9,
+    "prospects": 3,
+    "dealsCount": 8,
+    "pipelineTotal": 41700000,
+    "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-03T19:02:53.116733"
+    "lastUpdate": "2026-02-03T19:05:33.107746"
   }
 }
