@@ -2,21 +2,21 @@
   "trading": {
     "mt5": {
       "status": "online",
-      "balance": 99535.55,
-      "equity": 99535.55,
-      "profit_today": 0,
-      "profit_week": -94.21,
-      "profit_month": -93.81,
-      "trades_today": 0,
-      "winrate": 0,
+      "balance": 99561.87,
+      "equity": 99561.87,
+      "profit_today": 7.63,
+      "profit_week": -60.94,
+      "profit_month": -60.54,
+      "trades_today": 11,
+      "winrate": 54.5,
       "open_positions": 0,
       "drawdown": 0.0,
-      "last_update": "2026-02-04T04:00:42.140031"
+      "last_update": "2026-02-05T00:46:59.587406"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-04T04:00:42.287497"
+      "last_check": "2026-02-05T00:46:59.776425"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -29,8 +29,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "MAROC TEXTILE SARL",
-      "message": "Pas de contact depuis 380 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 381 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -38,8 +38,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "ATLAS IMPORT EXPORT",
-      "message": "Pas de contact depuis 378 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 379 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -47,8 +47,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "OUJDA AGRO SA",
-      "message": "Pas de contact depuis 382 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 383 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -56,8 +56,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "BERKANE CONSTRUCTION",
-      "message": "Pas de contact depuis 385 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 386 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -65,8 +65,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "ORIENTAL PHARMA",
-      "message": "Pas de contact depuis 379 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 380 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -74,8 +74,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "NADOR LOGISTICS",
-      "message": "Pas de contact depuis 390 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 391 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -83,8 +83,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "OUJDA MOTORS",
-      "message": "Pas de contact depuis 381 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 382 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -92,8 +92,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "ORIENTAL TECH",
-      "message": "Pas de contact depuis 395 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 396 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -101,8 +101,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "MAGHREB STEEL",
-      "message": "Pas de contact depuis 377 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 378 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     },
     {
@@ -110,8 +110,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "OUJDA FOOD",
-      "message": "Pas de contact depuis 383 jours",
-      "date_creation": "2026-02-04",
+      "message": "Pas de contact depuis 384 jours",
+      "date_creation": "2026-02-05",
       "auto": true
     }
   ],
@@ -154,28 +154,23 @@
         "client": "ATLAS CONSULTING",
         "dernier_contact": "2026-01-15",
         "action": "Suivi crédit équipement",
-        "jours": 20
+        "jours": 21
       },
       {
         "client": "NEXUS TECH",
         "dernier_contact": "2026-01-20",
         "action": "Renouvellement FC",
-        "jours": 15
+        "jours": 16
       },
       {
         "client": "MAROC TEXTILE",
         "dernier_contact": "2026-01-25",
         "action": "Proposition assurance",
-        "jours": 10
+        "jours": 11
       }
     ]
   },
   "predictions": [
-    {
-      "type": "warning",
-      "icon": "⚠️",
-      "message": "Win rate faible - considérer pause trading"
-    },
     {
       "type": "opportunity",
       "icon": "💡",
@@ -418,19 +413,13 @@
       "name": "app-deployer"
     },
     {
-      "name": "apple-notes"
-    },
-    {
-      "name": "apple-reminders"
+      "name": "backup-manager"
     },
     {
       "name": "bank-assistant"
     },
     {
       "name": "bank-manager"
-    },
-    {
-      "name": "bear-notes"
     },
     {
       "name": "better-memory"
@@ -442,9 +431,6 @@
       "name": "blogwatcher"
     },
     {
-      "name": "blucli"
-    },
-    {
       "name": "bluebubbles"
     },
     {
@@ -452,6 +438,9 @@
     },
     {
       "name": "business-intel"
+    },
+    {
+      "name": "calculator"
     },
     {
       "name": "calendar"
@@ -466,13 +455,16 @@
       "name": "ccpro-dashboard"
     },
     {
-      "name": "clawhub"
+      "name": "clawdhub"
     },
     {
       "name": "client-automator"
     },
     {
       "name": "client-crm"
+    },
+    {
+      "name": "clipboard-manager"
     },
     {
       "name": "coding-agent"
@@ -488,15 +480,6 @@
     },
     {
       "name": "crm-database"
-    },
-    {
-      "name": "crypto-alerts"
-    },
-    {
-      "name": "crypto-analytics"
-    },
-    {
-      "name": "crypto-tracker"
     },
     {
       "name": "crypto-trading"
@@ -535,10 +518,28 @@
       "name": "email-labeler"
     },
     {
+      "name": "email-sender"
+    },
+    {
       "name": "expense-tracker"
     },
     {
+      "name": "file-cleaner"
+    },
+    {
+      "name": "file-compressor"
+    },
+    {
+      "name": "file-manager"
+    },
+    {
+      "name": "file-organizer"
+    },
+    {
       "name": "file-reader"
+    },
+    {
+      "name": "file-search"
     },
     {
       "name": "file-sender"
@@ -574,9 +575,6 @@
       "name": "goals-tracker"
     },
     {
-      "name": "gog"
-    },
-    {
       "name": "google-calendar"
     },
     {
@@ -592,19 +590,25 @@
       "name": "greenhash-tracker"
     },
     {
-      "name": "himalaya"
+      "name": "habit-tracker"
     },
     {
-      "name": "imsg"
+      "name": "hash-generator"
+    },
+    {
+      "name": "image-converter"
+    },
+    {
+      "name": "image-optimizer"
+    },
+    {
+      "name": "image-resizer"
     },
     {
       "name": "invoice-generator"
     },
     {
-      "name": "jarvis"
-    },
-    {
-      "name": "jarvis-core"
+      "name": "json-viewer"
     },
     {
       "name": "knowledge-base"
@@ -619,9 +623,6 @@
       "name": "konan-hub"
     },
     {
-      "name": "konan-memory"
-    },
-    {
       "name": "konan-memory-rag"
     },
     {
@@ -629,6 +630,12 @@
     },
     {
       "name": "legal-briefing"
+    },
+    {
+      "name": "leonardo-ai"
+    },
+    {
+      "name": "link-shortener"
     },
     {
       "name": "linkedin-manager"
@@ -679,9 +686,6 @@
       "name": "mt5-study"
     },
     {
-      "name": "mt5-trade"
-    },
-    {
       "name": "multi-agent"
     },
     {
@@ -689,6 +693,9 @@
     },
     {
       "name": "nano-pdf"
+    },
+    {
+      "name": "network-tools"
     },
     {
       "name": "notion"
@@ -715,7 +722,7 @@
       "name": "oracle"
     },
     {
-      "name": "ordercli"
+      "name": "password-manager"
     },
     {
       "name": "pc-control"
@@ -730,9 +737,6 @@
       "name": "pdf-to-excel"
     },
     {
-      "name": "peekaboo"
-    },
-    {
       "name": "performance-coach"
     },
     {
@@ -740,6 +744,12 @@
     },
     {
       "name": "proactive-notifications"
+    },
+    {
+      "name": "pushover"
+    },
+    {
+      "name": "qr-generator"
     },
     {
       "name": "quick-actions"
@@ -751,7 +761,13 @@
       "name": "reminders"
     },
     {
-      "name": "sag"
+      "name": "scheduler"
+    },
+    {
+      "name": "screen-time"
+    },
+    {
+      "name": "screenshot"
     },
     {
       "name": "security-monitor"
@@ -760,13 +776,16 @@
       "name": "session-logs"
     },
     {
-      "name": "sherpa-onnx-tts"
+      "name": "signal"
     },
     {
       "name": "skill-creator"
     },
     {
       "name": "slack"
+    },
+    {
+      "name": "smart-alerts"
     },
     {
       "name": "smart-notifications"
@@ -781,13 +800,13 @@
       "name": "songsee"
     },
     {
-      "name": "sonoscli"
-    },
-    {
       "name": "spotify-player"
     },
     {
       "name": "stock-market-pro"
+    },
+    {
+      "name": "study-planner"
     },
     {
       "name": "summarize"
@@ -796,7 +815,13 @@
       "name": "system-control"
     },
     {
+      "name": "system-info"
+    },
+    {
       "name": "tax-helper"
+    },
+    {
+      "name": "telegram"
     },
     {
       "name": "telegram-cleaner"
@@ -805,13 +830,25 @@
       "name": "telegram-commander"
     },
     {
-      "name": "things-mac"
+      "name": "text-to-speech"
     },
     {
-      "name": "tmux"
+      "name": "text-utils"
+    },
+    {
+      "name": "time-tracker"
+    },
+    {
+      "name": "timer-stopwatch"
+    },
+    {
+      "name": "translator"
     },
     {
       "name": "trello"
+    },
+    {
+      "name": "unit-converter"
     },
     {
       "name": "veille-economique"
@@ -824,9 +861,6 @@
     },
     {
       "name": "voice-commands"
-    },
-    {
-      "name": "voice-mode"
     },
     {
       "name": "voice-notes"
@@ -860,7 +894,7 @@
     }
   ],
   "stats": {
-    "skillsCount": 150,
+    "skillsCount": 163,
     "clientsCount": 12,
     "activeClients": 9,
     "prospects": 3,
@@ -868,6 +902,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-04T04:00:42.435242"
+    "lastUpdate": "2026-02-05T00:46:59.969452"
   }
 }
