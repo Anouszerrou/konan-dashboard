@@ -2,21 +2,21 @@
   "trading": {
     "mt5": {
       "status": "online",
-      "balance": 99840.99,
-      "equity": 99840.99,
-      "profit_today": -64.65,
-      "profit_week": 224.12,
-      "profit_month": 224.52,
-      "trades_today": 87,
-      "winrate": 37.9,
+      "balance": 99828.99,
+      "equity": 99828.99,
+      "profit_today": -89.54,
+      "profit_week": 199.23,
+      "profit_month": 199.63,
+      "trades_today": 120,
+      "winrate": 35.0,
       "open_positions": 0,
       "drawdown": 0.0,
-      "last_update": "2026-02-07T12:00:56.368932"
+      "last_update": "2026-02-07T16:00:08.511714"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-07T12:00:56.537865"
+      "last_check": "2026-02-07T16:00:08.707631"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -418,6 +418,12 @@
       "name": "app-deployer"
     },
     {
+      "name": "apple-notes"
+    },
+    {
+      "name": "apple-reminders"
+    },
+    {
       "name": "backup-manager"
     },
     {
@@ -427,6 +433,9 @@
       "name": "bank-manager"
     },
     {
+      "name": "bear-notes"
+    },
+    {
       "name": "better-memory"
     },
     {
@@ -434,6 +443,9 @@
     },
     {
       "name": "blogwatcher"
+    },
+    {
+      "name": "blucli"
     },
     {
       "name": "bluebubbles"
@@ -461,6 +473,9 @@
     },
     {
       "name": "clawdhub"
+    },
+    {
+      "name": "clawhub"
     },
     {
       "name": "client-automator"
@@ -580,6 +595,9 @@
       "name": "goals-tracker"
     },
     {
+      "name": "gog"
+    },
+    {
       "name": "google-calendar"
     },
     {
@@ -601,6 +619,12 @@
       "name": "hash-generator"
     },
     {
+      "name": "healthcheck"
+    },
+    {
+      "name": "himalaya"
+    },
+    {
       "name": "image-converter"
     },
     {
@@ -608,6 +632,9 @@
     },
     {
       "name": "image-resizer"
+    },
+    {
+      "name": "imsg"
     },
     {
       "name": "invoice-generator"
@@ -730,6 +757,9 @@
       "name": "oracle"
     },
     {
+      "name": "ordercli"
+    },
+    {
       "name": "password-manager"
     },
     {
@@ -743,6 +773,9 @@
     },
     {
       "name": "pdf-to-excel"
+    },
+    {
+      "name": "peekaboo"
     },
     {
       "name": "performance-coach"
@@ -769,6 +802,9 @@
       "name": "reminders"
     },
     {
+      "name": "sag"
+    },
+    {
       "name": "scheduler"
     },
     {
@@ -782,6 +818,9 @@
     },
     {
       "name": "session-logs"
+    },
+    {
+      "name": "sherpa-onnx-tts"
     },
     {
       "name": "signal"
@@ -806,6 +845,9 @@
     },
     {
       "name": "songsee"
+    },
+    {
+      "name": "sonoscli"
     },
     {
       "name": "spotify-player"
@@ -844,10 +886,16 @@
       "name": "text-utils"
     },
     {
+      "name": "things-mac"
+    },
+    {
       "name": "time-tracker"
     },
     {
       "name": "timer-stopwatch"
+    },
+    {
+      "name": "tmux"
     },
     {
       "name": "translator"
@@ -902,7 +950,7 @@
     }
   ],
   "stats": {
-    "skillsCount": 164,
+    "skillsCount": 180,
     "clientsCount": 12,
     "activeClients": 9,
     "prospects": 3,
@@ -910,6 +958,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-07T12:00:56.687964"
+    "lastUpdate": "2026-02-07T16:00:08.946686"
   }
 }
