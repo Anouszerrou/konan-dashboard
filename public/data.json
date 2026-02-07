@@ -2,21 +2,21 @@
   "trading": {
     "mt5": {
       "status": "online",
-      "balance": 99916.1,
-      "equity": 99916.1,
-      "profit_today": -29.11,
-      "profit_week": 259.66,
-      "profit_month": 260.06,
-      "trades_today": 8,
-      "winrate": 12.5,
-      "open_positions": 0,
+      "balance": 99853.88,
+      "equity": 99852.75,
+      "profit_today": -47.57,
+      "profit_week": 241.2,
+      "profit_month": 241.6,
+      "trades_today": 66,
+      "winrate": 40.9,
+      "open_positions": 1,
       "drawdown": 0.0,
-      "last_update": "2026-02-07T04:00:15.469715"
+      "last_update": "2026-02-07T10:00:07.630285"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-07T04:00:15.627174"
+      "last_check": "2026-02-07T10:00:07.790389"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -171,11 +171,6 @@
     ]
   },
   "predictions": [
-    {
-      "type": "warning",
-      "icon": "⚠️",
-      "message": "Win rate faible - considérer pause trading"
-    },
     {
       "type": "opportunity",
       "icon": "💡",
@@ -910,6 +905,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-07T04:00:15.800974"
+    "lastUpdate": "2026-02-07T10:00:07.974386"
   }
 }
