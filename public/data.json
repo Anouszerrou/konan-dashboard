@@ -11,12 +11,12 @@
       "winrate": 35.0,
       "open_positions": 0,
       "drawdown": 0.0,
-      "last_update": "2026-02-07T16:00:08.511714"
+      "last_update": "2026-02-07T18:00:06.900004"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-07T16:00:08.707631"
+      "last_check": "2026-02-07T18:00:07.074892"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -424,6 +424,9 @@
       "name": "apple-reminders"
     },
     {
+      "name": "archive-manager"
+    },
+    {
       "name": "backup-manager"
     },
     {
@@ -494,6 +497,9 @@
     },
     {
       "name": "credit-simulator"
+    },
+    {
+      "name": "credit-workflow"
     },
     {
       "name": "crm-calendar-bridge"
@@ -625,6 +631,9 @@
       "name": "himalaya"
     },
     {
+      "name": "hippocampus-memory"
+    },
+    {
       "name": "image-converter"
     },
     {
@@ -659,6 +668,9 @@
     },
     {
       "name": "konan-personality"
+    },
+    {
+      "name": "konan-signals"
     },
     {
       "name": "legal-briefing"
@@ -784,6 +796,12 @@
       "name": "portfolio-sync"
     },
     {
+      "name": "prayer-times"
+    },
+    {
+      "name": "proactive-agent"
+    },
+    {
       "name": "proactive-notifications"
     },
     {
@@ -797,6 +815,9 @@
     },
     {
       "name": "quick-notes"
+    },
+    {
+      "name": "ratio-calculator"
     },
     {
       "name": "reminders"
@@ -950,7 +971,7 @@
     }
   ],
   "stats": {
-    "skillsCount": 180,
+    "skillsCount": 187,
     "clientsCount": 12,
     "activeClients": 9,
     "prospects": 3,
@@ -958,6 +979,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-07T16:00:08.946686"
+    "lastUpdate": "2026-02-07T18:00:07.257524"
   }
 }
