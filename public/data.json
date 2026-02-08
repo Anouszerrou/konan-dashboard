@@ -2,21 +2,21 @@
   "trading": {
     "mt5": {
       "status": "online",
-      "balance": 99957.79,
-      "equity": 99956.9,
-      "profit_today": 127.9,
-      "profit_week": 329.9,
-      "profit_month": 330.3,
-      "trades_today": 101,
-      "winrate": 54.5,
-      "open_positions": 1,
+      "balance": 99952.72,
+      "equity": 99952.72,
+      "profit_today": 0.0,
+      "profit_week": 0.0,
+      "profit_month": 328.43,
+      "trades_today": 1,
+      "winrate": 0.0,
+      "open_positions": 0,
       "drawdown": 0.0,
-      "last_update": "2026-02-08T22:00:06.783415"
+      "last_update": "2026-02-09T00:00:31.509426"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-08T22:00:06.934207"
+      "last_check": "2026-02-09T00:00:31.652626"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -264,8 +264,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "MAROC TEXTILE SARL",
-      "message": "Pas de contact depuis 384 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 385 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -273,8 +273,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "ATLAS IMPORT EXPORT",
-      "message": "Pas de contact depuis 382 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 383 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -282,8 +282,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "OUJDA AGRO SA",
-      "message": "Pas de contact depuis 386 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 387 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -291,8 +291,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "BERKANE CONSTRUCTION",
-      "message": "Pas de contact depuis 389 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 390 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -300,8 +300,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "ORIENTAL PHARMA",
-      "message": "Pas de contact depuis 383 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 384 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -309,8 +309,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "NADOR LOGISTICS",
-      "message": "Pas de contact depuis 394 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 395 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -318,8 +318,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "OUJDA MOTORS",
-      "message": "Pas de contact depuis 385 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 386 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -327,8 +327,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "ORIENTAL TECH",
-      "message": "Pas de contact depuis 399 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 400 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -336,8 +336,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "MAGHREB STEEL",
-      "message": "Pas de contact depuis 381 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 382 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     },
     {
@@ -345,8 +345,8 @@
       "type": "relance",
       "priorite": "haute",
       "client": "OUJDA FOOD",
-      "message": "Pas de contact depuis 387 jours",
-      "date_creation": "2026-02-08",
+      "message": "Pas de contact depuis 388 jours",
+      "date_creation": "2026-02-09",
       "auto": true
     }
   ],
@@ -389,23 +389,28 @@
         "client": "ATLAS CONSULTING",
         "dernier_contact": "2026-01-15",
         "action": "Suivi crédit équipement",
-        "jours": 24
+        "jours": 25
       },
       {
         "client": "NEXUS TECH",
         "dernier_contact": "2026-01-20",
         "action": "Renouvellement FC",
-        "jours": 19
+        "jours": 20
       },
       {
         "client": "MAROC TEXTILE",
         "dernier_contact": "2026-01-25",
         "action": "Proposition assurance",
-        "jours": 14
+        "jours": 15
       }
     ]
   },
   "predictions": [
+    {
+      "type": "warning",
+      "icon": "⚠️",
+      "message": "Win rate faible - considérer pause trading"
+    },
     {
       "type": "opportunity",
       "icon": "💡",
@@ -1209,6 +1214,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-08T22:00:07.098122"
+    "lastUpdate": "2026-02-09T00:00:31.809347"
   }
 }
