@@ -2,21 +2,21 @@
   "trading": {
     "mt5": {
       "status": "online",
-      "balance": 99959.66,
-      "equity": 99960.9,
-      "profit_today": 0,
-      "profit_week": 199.23,
-      "profit_month": 199.63,
-      "trades_today": 0,
-      "winrate": 0,
+      "balance": 99957.79,
+      "equity": 99956.9,
+      "profit_today": 127.9,
+      "profit_week": 329.9,
+      "profit_month": 330.3,
+      "trades_today": 101,
+      "winrate": 54.5,
       "open_positions": 1,
-      "drawdown": -0.0,
-      "last_update": "2026-02-08T20:07:00.770384"
+      "drawdown": 0.0,
+      "last_update": "2026-02-08T22:00:06.783415"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-08T20:07:00.974316"
+      "last_check": "2026-02-08T22:00:06.934207"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -252,8 +252,8 @@
     },
     {
       "telegram_id": "1834574428",
-      "code": "YKTS-R4AB",
-      "expires": "2026-02-09T14:43:21.725210",
+      "code": "6O1F-000T",
+      "expires": "2026-02-09T21:06:55.507104",
       "name": "Anas Zerrouki",
       "plan": "LIFETIME"
     }
@@ -406,11 +406,6 @@
     ]
   },
   "predictions": [
-    {
-      "type": "warning",
-      "icon": "⚠️",
-      "message": "Win rate faible - considérer pause trading"
-    },
     {
       "type": "opportunity",
       "icon": "💡",
@@ -1214,6 +1209,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-08T20:07:01.215914"
+    "lastUpdate": "2026-02-08T22:00:07.098122"
   }
 }
