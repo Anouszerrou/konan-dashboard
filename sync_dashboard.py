@@ -303,6 +303,101 @@ def get_predictions(mt5: Dict, clients: List, deals: List) -> List[Dict]:
     return predictions[:5]
 
 
+def get_konan_signals() -> Dict[str, Any]:
+    """Récupère les données KONAN Signals."""
+    KONAN_SIGNALS_DIR = Path(r"C:\Users\solan\clawd\skills\konan-signals")
+    
+    default = {
+        "stats": {
+            "total_signals": 0, "wins": 0, "losses": 0, "pending": 0,
+            "win_rate": 0, "total_pnl": 0, "avg_win": 0, "avg_loss": 0,
+            "best_trade": 0, "worst_trade": 0
+        },
+        "recent_signals": [],
+        "subscribers": {"total": 0, "active": 0, "revenue": 0},
+        "monthly": {}
+    }
+    
+    # Performance
+    perf_file = KONAN_SIGNALS_DIR / "performance.json"
+    if perf_file.exists():
+        try:
+            perf = json.loads(perf_file.read_text(encoding="utf-8"))
+            default["stats"] = perf.get("stats", default["stats"])
+            default["monthly"] = perf.get("monthly", {})
+            # 10 derniers signaux
+            signals = perf.get("signals", [])
+            default["recent_signals"] = sorted(
+                signals, key=lambda x: x.get("published_at", ""), reverse=True
+            )[:10]
+        except:
+            pass
+    
+    # Subscribers
+    subs_file = KONAN_SIGNALS_DIR / "subscribers.json"
+    if subs_file.exists():
+        try:
+            subs = json.loads(subs_file.read_text(encoding="utf-8"))
+            sub_list = subs.get("subscribers", [])
+            active = [
+                s for s in sub_list 
+                if s.get("status") == "active" and 
+                datetime.fromisoformat(s.get("expires_at", "2000-01-01")) > datetime.now()
+            ]
+            default["subscribers"] = {
+                "total": len(sub_list),
+                "active": len(active),
+                "revenue": subs.get("stats", {}).get("total_revenue", 0)
+            }
+        except:
+            pass
+    
+    return default
+
+
+def get_login_codes() -> List[Dict]:
+    """Récupère les codes de connexion valides pour le dashboard."""
+    KONAN_SIGNALS_DIR = Path(r"C:\Users\solan\clawd\skills\konan-signals")
+    subs_file = KONAN_SIGNALS_DIR / "subscribers.json"
+    
+    codes = []
+    
+    if subs_file.exists():
+        try:
+            subs = json.loads(subs_file.read_text(encoding="utf-8"))
+            for sub in subs.get("subscribers", []):
+                # Skip expired subscriptions
+                expires = datetime.fromisoformat(sub.get("expires_at", "2000-01-01"))
+                if expires < datetime.now() or sub.get("status") != "active":
+                    continue
+                
+                # Add access_code (permanent)
+                if sub.get("access_code"):
+                    codes.append({
+                        "telegram_id": sub.get("telegram_id"),
+                        "code": sub.get("access_code"),
+                        "expires": sub.get("expires_at"),
+                        "name": sub.get("name") or sub.get("username") or "Trader",
+                        "plan": sub.get("plan", "monthly").upper()
+                    })
+                
+                # Add login_code (temporary, 24h)
+                if sub.get("login_code"):
+                    login_expires = sub.get("login_code_expires", "2000-01-01")
+                    if datetime.fromisoformat(login_expires) > datetime.now():
+                        codes.append({
+                            "telegram_id": sub.get("telegram_id"),
+                            "code": sub.get("login_code"),
+                            "expires": login_expires,
+                            "name": sub.get("name") or sub.get("username") or "Trader",
+                            "plan": sub.get("plan", "monthly").upper()
+                        })
+        except:
+            pass
+    
+    return codes
+
+
 # ═══════════════════════════════════════════════════════════════════
 #                         MAIN SYNC
 # ═══════════════════════════════════════════════════════════════════
@@ -347,6 +442,12 @@ def sync_dashboard(push: bool = False, verbose: bool = True):
     if verbose: print("🧠 Génération Prédictions...")
     predictions = get_predictions(mt5_data, clients, deals)
     
+    if verbose: print("📡 Collecte KONAN Signals...")
+    konan_signals = get_konan_signals()
+    
+    if verbose: print("🔐 Collecte Login Codes...")
+    login_codes = get_login_codes()
+    
     # Calculer stats
     active_clients = len([c for c in clients if isinstance(c, dict) and c.get("type") == "actif"])
     prospects = len([c for c in clients if isinstance(c, dict) and c.get("type") == "prospect"])
@@ -359,6 +460,8 @@ def sync_dashboard(push: bool = False, verbose: bool = True):
             "bot": bot_data,
             "wave_catcher": wave_data
         },
+        "konan_signals": konan_signals,
+        "login_codes": login_codes,
         "alerts": all_alerts,
         "kpis": kpis,
         "planning": planning,

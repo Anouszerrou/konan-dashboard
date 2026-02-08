@@ -2,27 +2,262 @@
   "trading": {
     "mt5": {
       "status": "online",
-      "balance": 99922.26,
-      "equity": 99929.21,
-      "profit_today": 67.11,
-      "profit_week": 269.11,
-      "profit_month": 269.51,
-      "trades_today": 64,
-      "winrate": 56.2,
+      "balance": 99925.06,
+      "equity": 99922.8,
+      "profit_today": 88.81,
+      "profit_week": 290.81,
+      "profit_month": 291.21,
+      "trades_today": 74,
+      "winrate": 56.8,
       "open_positions": 1,
-      "drawdown": -0.01,
-      "last_update": "2026-02-08T14:00:08.099462"
+      "drawdown": 0.0,
+      "last_update": "2026-02-08T15:47:02.891429"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-08T14:00:08.237370"
+      "last_check": "2026-02-08T15:47:03.048513"
     },
     "wave_catcher": {
       "status": "stopped",
       "last_signal": "N/A"
     }
   },
+  "konan_signals": {
+    "stats": {
+      "total_signals": 18,
+      "wins": 13,
+      "losses": 3,
+      "pending": 2,
+      "total_pnl": 24.7,
+      "win_rate": 81.2,
+      "avg_win": 3.77,
+      "avg_loss": -8.11,
+      "best_trade": 9.53,
+      "worst_trade": -8.27
+    },
+    "recent_signals": [
+      {
+        "id": "d2d1b352347d",
+        "wave_ticket": "1463165751",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 71451.46,
+        "tp1": 71665.81438,
+        "tp2": 71951.62022,
+        "tp3": 72523.2319,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T15:03:13.032392",
+        "status": "sl_hit",
+        "exit_price": 71187.67,
+        "pnl": -8.27,
+        "pnl_percent": -0.37,
+        "duration_minutes": 0,
+        "notes": "🛑 ANTI-TREND EXIT! BUY en perte $-8.27 + Fisher BEARISH -1.84 + HA ROUGE → LIMITER DÉGÂTS!"
+      },
+      {
+        "id": "e681ba6b170a",
+        "wave_ticket": "1463123400",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 70833.94,
+        "tp1": 71046.44182,
+        "tp2": 71329.77758,
+        "tp3": 71896.4491,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:30:46.966301",
+        "status": "tp1_hit",
+        "exit_price": 71096.82,
+        "pnl": 5.02,
+        "pnl_percent": 0.37,
+        "duration_minutes": 0,
+        "notes": "🎯 FISHER EXTREME (2.62) - Retournement! +$5.02"
+      },
+      {
+        "id": "16a0c2ab4d71",
+        "wave_ticket": "1463102563",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 70837.24,
+        "tp1": 71049.75172,
+        "tp2": 71333.10068,
+        "tp3": 71899.7986,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.865585",
+        "status": "tp1_hit",
+        "exit_price": 70956.06,
+        "pnl": 2.14,
+        "pnl_percent": 0.17,
+        "duration_minutes": 0,
+        "notes": "⚠️ DOJI! Taking $2.1"
+      },
+      {
+        "id": "d98d521e01f9",
+        "wave_ticket": "1463094827",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 70639.31,
+        "tp1": 70851.22793,
+        "tp2": 71133.78516999999,
+        "tp3": 71698.89964999999,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.856616",
+        "status": "tp1_hit",
+        "exit_price": 70863.84,
+        "pnl": 4.25,
+        "pnl_percent": 0.32,
+        "duration_minutes": 0,
+        "notes": "⚠️ DOJI! Taking $4.2"
+      },
+      {
+        "id": "6e62557906a7",
+        "wave_ticket": "1463084939",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 70340.86,
+        "tp1": 70551.88257999999,
+        "tp2": 70833.24601999999,
+        "tp3": 71395.9729,
+        "sl": 0,
+        "confidence": 0.9,
+        "published_at": "2026-02-08T13:26:36.847341",
+        "status": "tp1_hit",
+        "exit_price": 70829.13,
+        "pnl": 9.53,
+        "pnl_percent": 0.69,
+        "duration_minutes": 0,
+        "notes": "🎯 FISHER EXTREME (2.54) - Retournement! +$9.53"
+      },
+      {
+        "id": "8ee7e2ea814f",
+        "wave_ticket": "1463068138",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 70024.83,
+        "tp1": 70234.90449,
+        "tp2": 70515.00381,
+        "tp3": 71075.20245,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.839365",
+        "status": "tp1_hit",
+        "exit_price": 70183.23,
+        "pnl": 2.93,
+        "pnl_percent": 0.23,
+        "duration_minutes": 0,
+        "notes": "🎯 FISHER EXTREME (2.50) - Retournement! +$2.93"
+      },
+      {
+        "id": "905862ae79c5",
+        "wave_ticket": "1463039640",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 70472.37,
+        "tp1": 70683.78710999999,
+        "tp2": 70965.67658999999,
+        "tp3": 71529.45554999998,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.831417",
+        "status": "sl_hit",
+        "exit_price": 70217.26,
+        "pnl": -8.01,
+        "pnl_percent": -0.36,
+        "duration_minutes": 0,
+        "notes": "🛑 ANTI-TREND EXIT! BUY en perte $-8.01 + Fisher BEARISH -2.08 + HA ROUGE → LIMITER DÉGÂTS!"
+      },
+      {
+        "id": "8bf7901842f7",
+        "wave_ticket": "1462997380",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 69503.79,
+        "tp1": 69712.30136999999,
+        "tp2": 69990.31652999998,
+        "tp3": 70546.34684999999,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.823778",
+        "status": "tp1_hit",
+        "exit_price": 70248.2,
+        "pnl": 7.31,
+        "pnl_percent": 1.07,
+        "duration_minutes": 0,
+        "notes": "⚠️ DOJI! Taking $7.3"
+      },
+      {
+        "id": "08bcec09665b",
+        "wave_ticket": "1462959406",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 69234.17,
+        "tp1": 69441.87250999999,
+        "tp2": 69718.80918999999,
+        "tp3": 70272.68255,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.815278",
+        "status": "tp1_hit",
+        "exit_price": 69446.68,
+        "pnl": 4.09,
+        "pnl_percent": 0.31,
+        "duration_minutes": 0,
+        "notes": "🎯 FISHER TRAILING (-0.85 < -0.8) - Reversal bearish! +$4.09 (peak: $6.32)"
+      },
+      {
+        "id": "6f4efb643a57",
+        "wave_ticket": "1462958456",
+        "symbol": "BTCUSD",
+        "direction": "BUY",
+        "entry_price": 69194.56,
+        "tp1": 69402.14368,
+        "tp2": 69678.92192,
+        "tp3": 70232.47839999999,
+        "sl": 0,
+        "confidence": 0.95,
+        "published_at": "2026-02-08T13:26:36.807403",
+        "status": "tp1_hit",
+        "exit_price": 69233.7,
+        "pnl": 0.84,
+        "pnl_percent": 0.06,
+        "duration_minutes": 0,
+        "notes": "🎯 FISHER EXTREME (2.51) - Retournement! +$0.84"
+      }
+    ],
+    "subscribers": {
+      "total": 1,
+      "active": 1,
+      "revenue": 0
+    },
+    "monthly": {
+      "2026-02": {
+        "signals": 16,
+        "wins": 13,
+        "losses": 3,
+        "pnl": 24.7
+      }
+    }
+  },
+  "login_codes": [
+    {
+      "telegram_id": "1834574428",
+      "code": "AKJS08RUZZ",
+      "expires": "2126-01-13T23:05:11.661993",
+      "name": "Anas Zerrouki",
+      "plan": "LIFETIME"
+    },
+    {
+      "telegram_id": "1834574428",
+      "code": "YKTS-R4AB",
+      "expires": "2026-02-09T14:43:21.725210",
+      "name": "Anas Zerrouki",
+      "plan": "LIFETIME"
+    }
+  ],
   "alerts": [
     {
       "id": "auto_client_cli_001",
@@ -974,6 +1209,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-08T14:00:08.393904"
+    "lastUpdate": "2026-02-08T15:47:03.209013"
   }
 }
