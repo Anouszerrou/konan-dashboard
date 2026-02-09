@@ -11,12 +11,12 @@
       "drawdown": 0,
       "profit_week": 0,
       "profit_month": 0,
-      "last_update": "2026-02-09T16:00:04.605007"
+      "last_update": "2026-02-09T18:00:04.274469"
     },
     "bot": {
       "status": "stopped",
       "last_signal": "N/A",
-      "last_check": "2026-02-09T16:00:04.747282"
+      "last_check": "2026-02-09T18:00:04.441611"
     },
     "wave_catcher": {
       "status": "stopped",
@@ -1217,6 +1217,6 @@
     "pipelineTotal": 41700000,
     "alertsCount": 10,
     "rdvToday": 0,
-    "lastUpdate": "2026-02-09T16:00:04.897715"
+    "lastUpdate": "2026-02-09T18:00:04.638565"
   }
 }
